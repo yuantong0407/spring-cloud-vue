@@ -23,7 +23,7 @@
 * Maven 3
 * Java 13
 * MySQL 8.0
-* Docker 1.13.1 (不是必须的)
+* Docker 1.13.1 (optional)
 
 ### vue2 front-end environment
 * node >= 6.9.0
