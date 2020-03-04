@@ -21,8 +21,8 @@
 ## Dependence
 ### java backend dependencies
 * Maven 3
-* Java 8
-* MySQL 5.7
+* Java 13
+* MySQL 8.0
 * Docker 1.13.1 (不是必须的)
 
 ### vue2 front-end environment
