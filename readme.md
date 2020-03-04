@@ -1,31 +1,31 @@
 # spring-cloud-vue
 ---
 
-## 项目简介
-* cloud-vue是一套基于springcloud + mybatis + vue全家桶（Vue2.x + Vue-router2.x + Vuex）的前后端分离框架.
-* 使用Maven对项目进行模块化管理，提高项目的易开发性、扩展性。
-* 系统包括分布式配置、eureka注册中心、服务中心、zipkin分布式跟踪等。
-* 每个模块服务多系统部署，注册到同一个eureka集群服务注册中心，实现集群部署。
+## Project Description
+* cloud-vue is a front-end and back-end separation framework based on springcloud + mybatis + vue family buckets (Vue2.x + Vue-router2.x + Vuex).
+* The framwork uses Maven to modularize the project to improve the ease of development and scalability of the project.
+* The system includes distributed configuration, eureka registration center, service center, zipkin distributed tracking, etc.
+* Each module serves multiple system deployments and is registered to the same eureka cluster service registration center for cluster deployment.
 
-## 主要功能
-* 登录、退出登录
-* 修改密码、记住密码
-* 菜单管理
-* 系统参数
-* 权限节点
-* 岗位管理
-* 部门管理
-* 用户组管理
-* 用户管理
+## The main function
+* Login, logout
+* Change password, remember password
+* Menu management
+* System parameters
+* Authority node
+* Job management
+* Department management
+* User group management
+* User Management
 
-## 依赖
-### java后端依赖环境
+## Dependence
+### java backend dependencies
 * Maven 3
 * Java 8
 * MySQL 5.7
 * Docker 1.13.1 (不是必须的)
 
-### vue2前端依赖环境
+### vue2 front-end environment
 * node >= 6.9.0
 * npm  >= 3.0.0
 * vue 				<https://vuefe.cn/v2/guide/>
@@ -37,46 +37,42 @@
 * lodash  			<http://lodashjs.com/docs/>
 * moment  			<http://momentjs.cn/>
 
-## 工程说明
-* cloud-config-server：配置中心。
-* cloud-eureka-server：注册中心。
-* cloud-simple-service：自定义的微服务。
-* cloud-zipkin-ui：分布式链路调用监控系统，聚合各业务系统调用延迟数据，达到链路调用监控跟踪。
-* cloud-vue : vue（Vue2.x + Vue-router2.x + Vuex)的前端项目
+## Engineering description
+* cloud-config-server：Configuration Center.
+* cloud-eureka-server：Registration Center.
+* cloud-simple-service：Custom microservice.
+* cloud-zipkin-ui：Distributed link call monitoring system, which aggregates call delay data of various business systems to achieve link call monitoring and tracking.
+* cloud-vue : vue（Vue2.x + Vue-router2.x + Vuex) front-end project.
 
-## 部署说明
- * 导入cloud-simple-service的cloud-vue.sql到mysql数据库。
- * 修改cloud-config-repo与cloud-zipkin-ui中的数据库配置文件
- * 打包命令 mvn package -DskipDockerBuild
- * 依次启动cloud-eureka-server-1.0.0.jar、cloud-config-server-1.0.0.jar、cloud-zipkin-ui-1.0.0.jar、cloud-simple-service-1.0.0.jar。
- * 端口：配置中心端口(1111)、注册中心(8888)、rest服务(80)、zipkin服务(9012)、UI前端(8080),如果端口冲突请自行修改。
+## Deployment Instructions
+ * Import cloud-vue.sql from cloud-simple-service to the mysql database.
+ * Modify the database configuration files in cloud-config-repo and cloud-zipkin-ui
+ * Packaging command mvn package -DskipDockerBuild
+ * Start cloud-eureka-server-1.0.0.jar、cloud-config-server-1.0.0.jar、cloud-zipkin-ui-1.0.0.jar、cloud-simple-service-1.0.0.jar, respectively.
+ * Port: configuration center port (1111), registration center (8888), rest service (80), zipkin service (9012), UI front end (8080), if the ports conflict, please modify it yourself.
 
-## 效果图
-![登录](./pic/登录.png)
+## Effect picture
+![Login](./pic/登录.png)
 
-![部门管理](./pic/部门管理.png)
+![Department Management](./pic/部门管理.png)
 
-![部门管理](./pic/部门管理.png)
+![Department Management](./pic/部门管理.png)
 
-![菜单管理](./pic/菜单管理.png)
+![Menu Management](./pic/菜单管理.png)
 
-![岗位管理](./pic/岗位管理.png)
+![Job Management](./pic/岗位管理.png)
 
-![权限规则管理](./pic/权限规则管理.png)
+![Permission Rule Management](./pic/权限规则管理.png)
 
-![用户组管理](./pic/用户组管理.png)
+![User Group Management](./pic/用户组管理.png)
 
-![注册中心](./pic/注册中心.png)
+![Registration Center](./pic/注册中心.png)
 
 ![swagger](./pic/swagger.png)
 
 ![zipkin](./pic/zipkin.png)
 
 ## License
-cloud-vue 基于apache2.0 <http://www.apache.org/licenses/LICENSE-2.0>
-
-如果项目对您有用，请作者喝杯咖啡吧！
-
-![支付二维码](./pic/二维码.jpg)
+cloud-vue is based on apache2.0 <http://www.apache.org/licenses/LICENSE-2.0>
 
 
