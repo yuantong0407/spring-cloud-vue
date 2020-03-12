@@ -1,6 +1,6 @@
 <template>
 	<div class="m-l-50 m-t-30 w-500">
-		<de-form ref="form" :model="form" :rules="rules" label-width="130px">
+		<el-form ref="form" :model="form" :rules="rules" label-width="130px">
 			<el-form-item label="用户名" prop="username">
 				<el-input v-model.trim="form.username" class="h-40 w-200" :maxlength=12></el-input>
 			</el-form-item>
@@ -27,7 +27,7 @@
 				<el-button type="primary" @click="add('form')" :loading="isLoading">提交</el-button>
 				<el-button @click="goback()">返回</el-button>
 			</el-form-item>
-		</de-form>
+		</el-form>
 	</div>
 </template>
 <style type="text/css">
